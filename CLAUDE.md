@@ -8,9 +8,9 @@ This file defines the working conventions for the active landing package. Follow
 
 - `npm run dev` starts `python3 -m http.server 4173`.
 - The site is static; browser refresh is manual (no hot reload).
-- `npm run build` runs `mkdir -p dist && cp -R index.html guide.html css js assets dist/`.
+- `npm run build` runs `mkdir -p public && cp -R index.html guide.html css js assets public/`.
 - Build is copy-only; there is no transpilation or bundling step.
-- If you add a new HTML page, update the `build` script in `package.json` to copy it into `dist/`.
+- If you add a new HTML page, update the `build` script in `package.json` to copy it into `public/`.
 
 ## Design System (from `css/styles.css`)
 
@@ -109,8 +109,8 @@ This file defines the working conventions for the active landing package. Follow
 2. Update page-specific metadata (`<title>`, description, OG/Twitter tags, canonical).
 3. Keep nav and footer structure consistent with existing pages.
 4. Ensure links and paths remain relative (`./css/styles.css`, `./js/main.js`, `./assets/...`).
-5. Update `package.json` build script so the new page is copied into `dist/`.
-6. Run `npm run build` and confirm file appears in `dist/`.
+5. Update `package.json` build script so the new page is copied into `public/`.
+6. Run `npm run build` and confirm file appears in `public/`.
 
 ## Nav/Footer Duplication Warning
 
@@ -128,7 +128,7 @@ Navigation and footer markup are duplicated across `index.html` and `guide.html`
 - No new npm dependencies for landing package unless explicitly requested.
 - No framework migration.
 - No CSS nesting syntax.
-- Never commit `dist/`.
+- Never commit `public/`.
 
 ## Pending Work / Known Placeholders
 
