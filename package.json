@@ -1,0 +1,13 @@
+{
+  "name": "@boundless/landing",
+  "private": true,
+  "version": "1.0.0",
+  "dependencies": {
+    "@mailchimp/mailchimp_marketing": "^3.0.80"
+  },
+  "scripts": {
+    "build": "mkdir -p dist && cp -R index.html guide.html terms.html privacy.html robots.txt sitemap.xml css js assets dist/",
+    "dev": "node dev-server.cjs",
+    "lint": "echo \"No lint configured for static landing\""
+  }
+}

@@ -1,0 +1,8 @@
+{
+  "version": 2,
+  "routes": [
+    { "src": "/api/subscribe", "dest": "/api/subscribe.js" },
+    { "src": "/guide", "dest": "/guide.html" },
+    { "src": "/(.*)", "dest": "/$1" }
+  ]
+}
