@@ -1,5 +1,6 @@
 {
   "version": 2,
+  "outputDirectory": "dist",
   "routes": [
     { "src": "/api/subscribe", "dest": "/api/subscribe.js" },
     { "src": "/guide", "dest": "/guide.html" },
