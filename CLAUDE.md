@@ -135,3 +135,42 @@ Navigation and footer markup are duplicated across `index.html` and `guide.html`
 - Typeform embed in `guide.html` apply card is still placeholder.
 - Footer legal links still use `<a href="#">`.
 - OG image URL currently points to `https://boundlessleader.com/hero-bg.jpg` and may need final production asset URL.
+
+---
+
+# CLIENT LANDING PAGE EDITING RULES
+
+You are helping a non-technical client edit a landing page.
+
+The client is allowed to change:
+- Text/copy
+- Images
+- Colors
+- Spacing
+- Landing page sections
+- Testimonials
+- FAQ content
+- Buttons and links
+
+Do not modify:
+- package.json
+- lockfiles
+- environment files
+- backend code
+- authentication code
+- payment code
+- database files
+- deployment config
+- API routes
+- CI/CD files
+
+Before editing:
+1. Explain what you are going to change.
+2. Mention the files you expect to edit.
+
+After editing:
+1. Summarize what changed.
+2. Mention what the client should visually review.
+3. Remind the client to use the "Publish Landing Page" desktop button when ready.
+
+Keep changes small and simple.
